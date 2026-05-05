@@ -2,17 +2,25 @@
 <html>
 <head>
 <title>Happy Birthday 🎉</title>
+
 <style>
 body {
   text-align: center;
   background: linear-gradient(45deg, #ff4e50, #f9d423);
   font-family: Arial;
   color: white;
+  overflow: hidden;
 }
+
 h1 {
   font-size: 40px;
   margin-top: 50px;
 }
+
+h2 {
+  margin-top: 10px;
+}
+
 button {
   padding: 15px 25px;
   font-size: 18px;
@@ -20,15 +28,17 @@ button {
   background: white;
   color: black;
   border-radius: 10px;
+  cursor: pointer;
 }
+
 .balloon {
   width: 50px;
   height: 70px;
-  background: red;
   border-radius: 50%;
   position: absolute;
-  animation: float 5s infinite;
+  animation: float 6s infinite;
 }
+
 @keyframes float {
   from { bottom: -100px; }
   to { bottom: 100%; }
@@ -38,7 +48,8 @@ button {
 
 <body>
 
-<h1>🎂 Happy Birthday 🎉</h1>
+<h1>🎂 Happy Birthday SAIQA 🎉</h1>
+<h2>❤️ You are very special ❤️</h2>
 
 <button onclick="startParty()">Click Here 🎁</button>
 
@@ -48,7 +59,7 @@ button {
 function startParty() {
   document.getElementById("music").play();
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 15; i++) {
     let balloon = document.createElement("div");
     balloon.className = "balloon";
     balloon.style.left = Math.random() * 100 + "vw";
@@ -56,9 +67,9 @@ function startParty() {
     document.body.appendChild(balloon);
   }
 
-  alert("🎉 Surprise!!! 🎂");
+  alert("🎉 Surprise SAIQA! 🎂");
 }
 </script>
 
 </body>
-</html># First-site.github.io
+</html>
